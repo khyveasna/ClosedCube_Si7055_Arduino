@@ -1,6 +1,6 @@
 /*
 
-Arduino Library for Silicon Labs Si7055 ±0.5°C (max) Digital Temperature Sensor
+Arduino Library for Silicon Labs Si7055 Â±0.5Â°C (max) Digital Temperature Sensor
 Written by AA for ClosedCube
 
 ---
@@ -67,7 +67,7 @@ float ClosedCube_Si7055::readTemperature() {
 
 	uint16_t val = msb << 8 | lsb;
 
-	return (175.26*val) / 65536 - 46.85;
+	return (175.72*val) / 65536 - 46.85;
 }
 
 
